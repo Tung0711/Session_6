@@ -108,15 +108,6 @@ public class Product {
                 (this.productStatus == 0) ? "Đang bán" : (this.productStatus == 1) ? "Hết hàng" : "Không bán");
     }
 
-    public String getCatalogById(Categories[] arrCategories, int indexCatalog, int catalogId) {
-        for (int i = 0; i < indexCatalog; i++) {
-            if (arrCategories[i].getCatalogId() == catalogId) {
-                return arrCategories[i].getCatalogName();
-            }
-        }
-        return null;
-    }
-
     public String inputProductId(Scanner scanner, Product[] arrProduct, int indexProduct) {
         //Nhập mã sản phẩm
         System.out.println("Nhập mã sản phẩm: ");
